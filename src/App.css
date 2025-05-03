@@ -1,0 +1,82 @@
+main {
+  background-color: black;
+  width: 80%;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+  padding: 10px;
+  color: white;
+}
+
+.todo-form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.todo-form input {
+  background-color: white;
+  color: black;
+  width: 50%;
+  height: 50px;
+  padding-left: 5px;
+  text-transform: capitalize;
+  border: none;
+  border-radius: 5px;
+}
+
+.todo-form input::placeholder{
+  /* color: white; */
+}
+
+.todo-form button {
+  background-color: white;
+  color: black;
+  width: 7%;
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.todo-list-container {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.todo-list-item-container {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  font-size: 25px;
+  margin: 0 auto;
+  padding: 5px;
+  text-transform: capitalize;
+}
+
+.todo-list-item-button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.todo-list-item-container button {
+  background-color: white;
+  width: 50%;
+  height: 35px;
+  text-transform: capitalize;
+  border: none;
+  border-radius: 5px;
+}

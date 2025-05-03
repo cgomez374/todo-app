@@ -9,23 +9,18 @@ export default function TodoForm({ addNewTodo }){
 
   function handleSubmit(event){
     event.preventDefault()
-    addNewTodo(name)
+    !name ? alert("input empty") : addNewTodo(name)
     setName("")
   }
-
-
   return (
-    <div className="">
-      <h2>todo form</h2>
-      <form onSubmit={handleSubmit}>
-        <input 
-          type="text"
-          value={name}
-          onChange={handleChange}
-          placeholder="Enter new to-do "
-        />
-        <button type="submit">submit</button>
-      </form>
-    </div>
+    <form onSubmit={handleSubmit} className="todo-form">
+      <input 
+        type="text"
+        value={name}
+        onChange={handleChange}
+        placeholder="Enter new to-do "
+      />
+      <button type="submit">submit</button>
+    </form>
   )
 }
