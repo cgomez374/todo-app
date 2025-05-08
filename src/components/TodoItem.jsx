@@ -1,12 +1,12 @@
 export default function TodoItem({item, updateCompletedStatus, deleteTodoItem}){
-  return (
+   return (
     <li className="todo-list-item-container">
       <div className="">
         {/* <label htmlFor="completed-todo">Completed:</label> */}
         <input 
           type="checkbox" 
           name="completed-todo" 
-          checked={item.completedStatus ? true : false}
+          checked={item.completedStatus}
           onChange={() => updateCompletedStatus(item.id)}  
         />
       </div>
